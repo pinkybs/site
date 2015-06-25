@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+----------------------------------------------
+Created Date : 2010/11/27
+Author: Triatan
+Last Up Date : 2009/11/27
+Author: Triatan
+----------------------------------------------
+*/
+
+/* @reset
+----------------------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+ol,ul {
+    list-style: none;
+}
+caption,th {
+    text-align: left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym {
+	border: 0;
+}
+a {
+	outline: none;
+}
+a img {
+	border: 0;
+	vertical-align: middle;
+}
+
+.clearFix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	font-size: 0;
+	clear:both;
+	visibility:hidden;
+}
+
+.clearFix {
+	min-height:1px;
+}
+
+*html .clearFix {
+	height:1px;
+}
+
+
+
+.clear{clear:both;visibility:hidden;line-height:0px;height:0px;overflow:hidden;font-size:0;}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	line-height: 1.2;
+	background: none;
+}
+
+a:link {
+
+}
+
+a:visited {
+	
+}
+
+a:hover {
+	
+}
+
+
+/* @layout
+----------------------------------------------*/
+.header{width；100%; height:150px; margin-bottom: 10px; background: url(../images/header_bg.jpg) repeat-x left top;}
+.header .logo{position: relative; width:1000px; height: 90px; margin: 0 auto;}
+.header .logo .mainLogo{position: absolute; left:0; top:12px;}
+.header .logo .subLogo{position: absolute; right:0; top:20px;}
+.header .nav{width:1000px; height: 60px; margin: 0 auto;}
+.header .nav ul li{_display:inline; float: left;}
+.header .nav ul li a{display: block; text-decoration: none; font-weight: bold; padding: 0 20px; height: 60px; line-height: 60px; font-size: 13px; color:#3e3a39; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif;
+-moz-transition:all .3s ease-out;
+-webkit-transition:all .3s ease-out;
+-o-transition:all .3s ease-out;
+-ms-transition:all .3s ease-out;
+transition:all .3s ease-out;
+ }
+.header .nav ul li a.index{padding: 0 39px; }
+.header .nav ul li a:hover,.header .nav ul li a.cur{background-color: #545252; color:#6baa2f;}
+
+.content{background: url(../images/content_bg.gif) left top;}
+.content .mainContent{width: 980px; padding:0 10px; margin: 0 auto; background-color: #fff;}
+
+.footer{padding: 50px 0; background-color: #e6e6e6; margin-top: 10px;}
+.footer .footerCont{width: 1000px; margin: 0 auto;}
+.footer .footerCont p{text-align:center; color:#231815; font-size: 13px; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif; font-weight: bold; margin-bottom: 12px;}
+
+.mainContent .mainLink{margin-top: 10px;}
+.mainContent .mainLink a{display:inline-block; border:1px solid #bebebe; margin-right: 6px;}
+.mainContent .mainLink a:hover{opacity: 0.5;}
+.mainContent .mainLink a.mLink3{margin-right: 0;}
+
+
+/* index.html
+----------------------------------------------*/
+.indexBox{}
+.indexBox .mainSlide{position:relative; width:980px; height:386px; overflow:hidden;}
+.indexBox .mainList{margin-top: 10px;}
+.indexBox .mainList a:hover{opacity: 0.5;}
+.indexBox .mainList .leftBar{_display:inline; width: 272px; float: left; }
+.indexBox .mainList .rightBar{_display:inline; width: 701px; float: right;}
+.indexBox .mainList .rightBar .link2{_display:inline; float: right; margin-bottom: 6px;}
+.indexBox .mainList .rightBar .link3{_display:inline; float: right; margin-left: 7px;}
+.indexBox .mainList .rightBar .link4{_display:inline; float: right;}
+
+
+/* aboutamo.html 
+----------------------------------------------*/
+.amoBox{padding-bottom: 50px;}
+
+
+/* aboutilasik.html
+----------------------------------------------*/
+.aboutilasikBox{}
+.aboutilasikBox a{display:block; border:1px solid #fff;}
+.aboutilasikBox a:hover{border:1px solid #a6e866;}
+.aboutilasikBox a.link2{_display:inline; float: left; margin-top: 9px;}
+.aboutilasikBox a.link3{_display:inline; float: right; margin-top: 9px;}
+
+
+/* howilasik.html
+----------------------------------------------*/
+.howilasikBox{}
+.howilasikBox h2{margin-bottom: 10px;}
+.howilasikBox .cont{text-align: center; padding-bottom: 100px;}
+
+
+/* whylasik.html
+----------------------------------------------*/
+.whylasikBox{}
+.whylasikBox .section2{padding-bottom: 86px;}
+.whylasikBox .section2 img{_display:inline; float: left; margin-left: 23px; }
+.whylasikBox .section2 .calc{_display:inline; float: right; margin-right: 40px; margin-top: 36px; width: 428px; height: 120px; background: url(../images/whylasik/whylasik_img3.jpg) no-repeat; }
+.whylasikBox .section2 .calc:hover{background-position: left -120px;}
+.whylasikBox h2{margin-bottom: 20px;}
+.whylasikBox .cont{text-align: center; padding-bottom: 90px;}
+
+
+/* searchresult.html
+----------------------------------------------*/
+.searchresultBox{color:#3e3a39; font-size: 12px; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif; }
+.searchresultBox .searchresultItem1{border:1px solid #bfbfbf; margin-bottom: 10px;}
+.searchresultBox .searchresultItem1 a{color:#3e3a39; text-decoration: none; display: inline-block; padding:2px 4px;}
+.searchresultBox .searchresultItem1 a.cur{background-color: #6dad2f; color:#fff; border-radius:2px;}
+.searchresultBox .searchresultItem1 .hdr{padding:5px 15px; background-color: #eeeeee; border-bottom: 1px solid #bfbfbf;}
+.searchresultBox .searchresultItem1 .cont{padding:10px 15px; padding-bottom: 0;}
+.searchresultBox .searchresultItem1 .cont .col1{_display:inline; float: left; margin-right: 14px; padding: 2px 0;}
+.searchresultBox .searchresultItem1 .cont .col2{_display:inline; float: left; margin-right: 20px;}
+.searchresultBox .searchresultItem1 .cont .col3{_display:inline; float: left; width: 556px; }
+.searchresultBox .searchresultItem1 .cont .col3 ul li{_display:inline; float: left; margin-right: 20px; padding-bottom: 10px;}
+.searchresultBox .searchresultItem1 .cont .col3 ul li a{color:#3e3a39; }
+.searchresultBox .searchresultItem1 .cont .col3 ul li a.cur{border-radius:2px; color:#fff;}
+.searchresultBox .searchresultItem2{border:1px solid #bfbfbf; padding:10px 15px; padding-bottom:0; margin-bottom: 10px;}
+.searchresultBox .searchresultItem2 .col1{_display:inline; float: left; margin-right: 25px; }
+.searchresultBox .searchresultItem2 .col2 ul li{_display:inline; float: left; margin-right: 20px; padding-bottom: 10px;}
+.searchresultBox .searchresultItem2 .col2 a{color:#6baa2f; text-decoration: none; display: inline-block;}
+.searchresultBox .searchresultItem3{border:1px solid #bfbfbf; padding:0 20px; padding-bottom:0; overflow: hidden; background: url(../images/searchresult/searchresultTable_bg.gif) repeat-x left top;}
+.searchresultBox .searchresultItem3 .searchresultTableWrap{margin-bottom: -1px; }
+.searchresultBox .searchresultItem3 .searchresultTable{border-collapse: collapse; width: 100%;}
+.searchresultBox .searchresultItem3 .searchresultTable th{letter-spacing: 4px; height: 34px; line-height: 34px; color:#9fa0a0; font-size: 15px; text-align: center; }
+.searchresultBox .searchresultItem3 .searchresultTable td{padding:25px; border-bottom: 1px solid #e0e0e0; text-align: center;}
+.searchresultBox .searchresultItem3 .searchresultTable td.col1{font-size: 17px; color: #231815; font-weight: bold; letter-spacing: 4px;}
+.searchresultBox .searchresultItem3 .searchresultTable td.col2{color:#6db328; font-size: 17px; font-weight: bold; letter-spacing: 4px;}
+.searchresultBox .searchresultItem3 .searchresultTable td.col3 a{color:#c3c3c3; font-size: 17px; text-decoration: none;}
+.searchresultBox .searchresultItem3 .searchresultTable td.col3 a:hover{text-decoration: underline;}
+.searchresultBox .searchresultItem4{padding:15px 20px 80px;}
+.searchresultBox .searchresultItem4 .tips{_display:inline; float:left; color:#e60012; font-weight: bold; padding-top: 5px;}
+.searchresultBox .searchresultItem4 .pager{_display:inline; float:right;}
+.searchresultBox .searchresultItem4 .pager a{border:1px solid #d1d1d1; display: inline-block; padding:4px 8px; color:#231815; text-decoration: none;}
+.searchresultBox .searchresultItem4 .pager a:hover,.searchresultBox .searchresultItem4 .pager a.cur{border:1px solid #000;}
+
+
+/* searchonline.html
+----------------------------------------------*/
+.searchonlineBox{position: relative; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif; }
+.searchonlineBox .searchbar{position: absolute; left:590px; top:280px; height: 28px; }
+.searchonlineBox .searchbar .th{display: inline; float: left; font-size: 14px; font-weight: bold; margin-right:8px; line-height: 28px;}
+.searchonlineBox .searchbar .form{position:relative; display: inline; float: left; height: 14px; border: 1px solid #b5b6b7; background-color: #fff; padding:6px 10px; padding-right: 38px; *padding-top:3px; *padding-bottom:9px;}
+.searchonlineBox .searchbar .form input{ border: none; border:0; width: 120px; height:14px; line-height: 14px; }
+.searchonlineBox .searchbar .form .dropdown{position:absolute; right:0; top:0; display: block; width: 28px; height: 26px; border-left:1px solid #b5b6b7; background:url(../images/searchresult/dropdown_icon.gif) no-repeat center center;}
+.searchonlineBox .searchbar .form .tristan_select_op{display:none; position: absolute; top: 27px; left:-1px; background-color: #fff; width: 168px; border:1px solid #b5b6b7; border-top: none; }
+.searchonlineBox .searchbar .form .tristan_select_op ul li{}
+.searchonlineBox .searchbar .form .tristan_select_op ul li a{display: block; padding:6px 10px; text-decoration: none; color:#3e3a39;}
+.searchonlineBox .searchbar .form .tristan_select_op ul li a:hover{background-color: #f4f4f4;}
+.searchonlineBox .searchbar .submit{display: inline; float: left; line-height: 26px; width:92px; border:1px solid #b5b6b7; text-align: center; font-size: 14px; color:#3e3a39; background-color: #fff; text-decoration: none; font-weight: bold; vertical-align: 1px; margin-left: 5px;}
+
+
+/* whatlasik.html
+----------------------------------------------*/
+.whatlasikBox{}
+.whatlasikBox h2{margin-bottom:15px; }
+.whatlasikBox .leftbar{_display:inline; float:left; margin-left:13px;}
+.whatlasikBox .rightbar{_display:inline; float:right; margin-right:13px;}
+
+
+/* testilasik.html
+----------------------------------------------*/
+.testilasikBox{font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif;}
+.testilasikBox .testilasikWrap{padding-bottom: 60px;}
+.testilasikBox h2{margin-bottom:2px; }
+.testilasikBox .testItem{padding:10px 15px; border-bottom:1px dotted #cccccc;}
+.testilasikBox .testItem.grey{background-color: #f7f8f8;}
+.testilasikBox .testItem .question{color:#231815; font-size: 18px; margin-bottom: 8px;}
+.testilasikBox .testItem .answer a{display:inline-block; border-radius:5px; margin-right: 30px; color:#231815; font-size: 14px; padding:4px 10px; background-color: #ececec; border: 1px solid #e1e1e1; text-decoration: none; text-align: center;}
+.testilasikBox .testItem .answer a.cur{background-color: #6c6c6c; color:#fff;}
+.testilasikBox .submit{display: block; width:78px; padding-left: 33px; height: 30px; line-height: 30px; color:#231815; font-size: 17px; text-decoration: none; background: url(../images/testilasik/testilasik_img2.jpg) no-repeat;  margin: 0 auto; margin-top: 10px; }
+.testilasikBox .result1,.testilasikBox .result2{padding:60px 0; display:none;}
+

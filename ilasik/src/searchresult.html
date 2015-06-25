@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>iLasik</title>
+<link href="css/main.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="header">
+    <div class="logo">
+      <a class="mainLogo" href=""><img src="images/main_logo.png"></a>
+      <span class="subLogo"><img src="images/sub_logo.png"></span>
+    </div>
+    <div class="nav">
+     <ul>
+       <li><a class="index" href="index.html">首页</a></li>
+       <li><a href="why.html">为什么要做LASIK</a></li>
+       <li><a href="what.html">什么是LASIK手术</a></li>
+       <li><a href="quality.html">有关视觉质量</a></li>
+       <li><a href="about.html">有关iLASIK</a></li>
+       <li><a href="quiz.html">您是否适合iLASIK</a></li>
+       <li><a href="question.html">iLASIK常见问答</a></li>
+       <li><a href="aboutamo.html">关于AMO</a></li>
+     </ul>
+    </div>
+	</div>
+
+	<div class="content">
+		<div class="mainContent">
+      <div class="searchresultBox">
+        <div class="searchresultItem1">
+          <div class="hdr">找到 “<span id="lblSearchKey">全部</span>”相关<span id="lblSearchCnt">307</span>个</div>
+          <div class="cont clearFix">
+            <span class="col1">城市:</span>
+            <span class="col2"><a class="all cur" href="searchresult.html?city=">全部</a></span>
+            <div class="col3">
+              <ul class="searchcity">
+                <!--<li><a href="">淮安</a></li>
+                <li><a href="">淮北</a></li>
+                <li><a href="">怀化</a></li>
+                <li><a href="">呼和浩特</a></li>
+                <li><a href="">惠州</a></li>
+                <li><a href="">湖州</a></li>
+                <li><a href="">佳木斯</a></li>
+                <li><a href="">建湖</a></li>
+                <li><a href="">吉林</a></li>
+                <li><a href="">即墨</a></li>-->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="searchresultItem2">
+          <span class="col1">大家都在找：</span>
+          <div class="col2">
+            <ul class="clearFix">
+              <li><a href="searchresult.html?city=BEIJING">北京</a></li>
+              <li><a href="searchresult.html?city=SHANGHAI">上海</a></li>
+              <li><a href="searchresult.html?city=GUANGZHOU">广州</a></li>
+              <li><a href="searchresult.html?city=SHENZHEN">深圳</a></li>
+              <li><a href="searchresult.html?city=CHENGDU">成都</a></li>
+              <li><a href="searchresult.html?city=HAERBIN">哈尔滨</a></li>
+              <li><a href="searchresult.html?city=SHENYANG">沈阳</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="searchresultItem3">
+          <div class="searchresultTableWrap">
+            <table cellspacing="0" cellpadding="0" border="0" class="searchresultTable" >
+              <tr>
+                <th>城市</th>
+                <th>医院</th>
+                <th>网站</th>
+              </tr>
+              <!--<tr>
+                <td class="col1">[北京]</td>
+                <td class="col2">新华医院</td>
+                <td class="col3"><a href="">www.xinhuayiyuan.com</a></td>
+              </tr>
+              <tr>
+                <td class="col1">[上海]</td>
+                <td class="col2">新华医院</td>
+                <td class="col3"><a href="">www.xinhuayiyuan.com</a></td>
+              </tr>
+              <tr>
+                <td class="col1">[呼和浩特]</td>
+                <td class="col2">新华医院</td>
+                <td class="col3"><a href="">www.xinhuayiyuan.com</a></td>
+              </tr>
+              <tr>
+                <td class="col1">[济南]</td>
+                <td class="col2">新华医院</td>
+                <td class="col3"><a href="">www.xinhuayiyuan.com</a></td>
+              </tr>
+              <tr>
+                <td class="col1">[石家庄]</td>
+                <td class="col2">新华医院</td>
+                <td class="col3"><a href="">www.xinhuayiyuan.com</a></td>
+              </tr>-->
+            </table>
+          </div>
+        </div>
+        <div class="searchresultItem4 clearFix">
+          <p class="tips">温馨提示: 具体手术方案请以医生的判断为准</p>
+          <div class="pager" style="display:none;">
+            <!--<a class="prev" href="">上一页</a>
+            <a class="nml" href="">1</a>
+            <a class="nml" href="">2</a>
+            <a class="nml" href="">3</a>
+            <a class="next" href="">下一页</a>-->
+          </div>
+        </div>
+      </div>
+		</div>
+	</div>
+
+	<div class="footer">
+   <div class="footerCont">
+     <p>©2014 Abbott Medical Optics Inc.</p>
+     <p>iLASIK商标注册证号码：10 6820355</p>
+     <p>PP2015RF0098</p>
+   </div>
+	</div>
+
+
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    //$('.nav a').eq(0).addClass('cur');
+	//alert(window.location.href);
+	var reg = new RegExp("(^|&)" + 'city' + "=([^&]*)(&|$)");
+	var reg2 = new RegExp("(^|&)" + 'page' + "=([^&]*)(&|$)");
+	var r = location.search.substring(1).match(reg);
+	var city = '';
+	var r2 = location.search.substring(1).match(reg2);
+	var page = 1;
+	if (r != null) {
+		city = $.trim(decodeURI(r[2]));
+	}
+	if (r2 != null) {
+		page = $.trim(decodeURI(r2[2]));
+	}
+	//alert(page);
+	ilasik.searchresult(city, page);	
+  }); //end ready
+</script>
+</body>
+</html>

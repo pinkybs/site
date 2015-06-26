@@ -121,7 +121,7 @@ transition:all .3s ease-out;
 
 .mainContent .mainLink{margin-top: 10px;}
 .mainContent .mainLink a{display:inline-block; border:1px solid #bebebe; margin-right: 6px;}
-.mainContent .mainLink a:hover{opacity: 0.5;}
+.mainContent .mainLink a:hover{border:1px solid #6baa2f;}
 .mainContent .mainLink a.mLink3{margin-right: 0;}
 
 
@@ -130,12 +130,31 @@ transition:all .3s ease-out;
 .indexBox{}
 .indexBox .mainSlide{position:relative; width:980px; height:386px; overflow:hidden;}
 .indexBox .mainList{margin-top: 10px;}
-.indexBox .mainList a:hover{opacity: 0.5;}
+.indexBox .mainList a{text-decoration: none;}
+.indexBox .mainList a .btn{position: absolute; right:10px; bottom:10px; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif; position:absolute; display:block; width:70px; text-align: center;  height: 20px; line-height: 20px; font-size:14px; color:#fff; background-color: #6dad2f; }
 .indexBox .mainList .leftBar{_display:inline; width: 272px; float: left; }
+.indexBox .mainList .leftBar .link1{position: relative; display: block; width:272px; height: 347px; overflow: hidden;  }
+.indexBox .mainList .leftBar .link1 .btn{}
+.indexBox .mainList .leftBar a img,.indexBox .mainList .rightBar a img{
+	-moz-transition:all 3s ease-out;
+	-webkit-transition:all 3s ease-out;
+	-o-transition:all 3s ease-out;
+	-ms-transition:all 3s ease-out;
+	transition:all 3s ease-out;
+}
+.indexBox .mainList .leftBar a .btn,.indexBox .mainList .rightBar a .btn{
+	-moz-transition:all 3s ease-out;
+	-webkit-transition:all 3s ease-out;
+	-o-transition:all 3s ease-out;
+	-ms-transition:all 3s ease-out;
+	transition:all 3s ease-out;
+}
+.indexBox .mainList a:hover img{transform:scale(1.1); }
+.indexBox .mainList a:hover .btn{background-color:#545252;}
 .indexBox .mainList .rightBar{_display:inline; width: 701px; float: right;}
-.indexBox .mainList .rightBar .link2{_display:inline; float: right; margin-bottom: 6px;}
-.indexBox .mainList .rightBar .link3{_display:inline; float: right; margin-left: 7px;}
-.indexBox .mainList .rightBar .link4{_display:inline; float: right;}
+.indexBox .mainList .rightBar .link2{position:relative; _display:inline; float: right; margin-bottom: 6px; width: 701px; height: 109px; overflow: hidden;}
+.indexBox .mainList .rightBar .link3{position:relative; _display:inline; float: right; margin-left: 7px; width: 345px; height: 232px; overflow: hidden;}
+.indexBox .mainList .rightBar .link4{position:relative; _display:inline; float: right; width: 349px; height: 232px; overflow: hidden;}
 
 
 /* aboutamo.html 
@@ -237,6 +256,49 @@ transition:all .3s ease-out;
 .testilasikBox .testItem .question{color:#231815; font-size: 18px; margin-bottom: 8px;}
 .testilasikBox .testItem .answer a{display:inline-block; border-radius:5px; margin-right: 30px; color:#231815; font-size: 14px; padding:4px 10px; background-color: #ececec; border: 1px solid #e1e1e1; text-decoration: none; text-align: center;}
 .testilasikBox .testItem .answer a.cur{background-color: #6c6c6c; color:#fff;}
+.testilasikBox .testItem #divsel1{_display:inline; float:left; margin-right: 30px;}
+.testilasikBox .testItem #divsel2{_display:inline; float:left; margin-right: 30px;}
+.testilasikBox .testItem #divsel3{_display:inline; float:left; margin-right: 30px;}
 .testilasikBox .submit{display: block; width:78px; padding-left: 33px; height: 30px; line-height: 30px; color:#231815; font-size: 17px; text-decoration: none; background: url(../images/testilasik/testilasik_img2.jpg) no-repeat;  margin: 0 auto; margin-top: 10px; }
 .testilasikBox .result1,.testilasikBox .result2{padding:60px 0; display:none;}
+
+
+/* experts.html
+----------------------------------------------*/
+.expertsBox{font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif;}
+.expertsBox .expertsItem{margin-bottom: 3px; *margin-bottom: 6px;}
+.expertsBox .expertsItem .img{_display:inline; float: left;}
+.expertsBox .expertsItem .txt{_display:inline; float: right; width:748px; height: 222px; border:1px solid #d1d1d2;}
+.expertsBox .expertsItem .txt .hdr{padding:5px 0; border-bottom:1px solid #d1d1d2; background-color: #f7f8f8;}
+.expertsBox .expertsItem .txt .hdr h2{_display:inline; float: left; font-size: 23px; color:#3e3a39; font-weight: bold; padding: 0 15px; border-right:1px solid #d1d1d2;}
+.expertsBox .expertsItem .txt .hdr h3{_display:inline; float: left; font-size: 12px; padding:0 10px; color:#595757;}
+.expertsBox .expertsItem .txt .data{padding:10px 15px 0;}
+.expertsBox .expertsItem .txt .data p{line-height: 1.5; color:#595757;}
+
+
+/* faq.html
+----------------------------------------------*/
+.faqBox{}
+.faqBox .ttl{margin:5px 0;}
+.faqBox .faqItem{padding:5px 10px; border-bottom: 1px dotted #cfd0d0;}
+.faqBox .faqItem.grey{background-color: #f7f8f8;}
+.faqBox .faqItem .qu{display:block; height:20px; line-height:20px; padding-left:25px; background:url(../images/faq/faq_icon.png) no-repeat; font-size: 15px; color:#231815; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif; text-decoration: none; font-weight: bold;}
+
+.faqBox .faqItem .qu.cur{background-position: left -20px;}
+.faqBox .faqItem .aw{display:none; color:#595757; font-size: 14px; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif; text-indent: 2em; padding:8px 25px; line-height: 1.6; }
+
+
+/* visual.html
+----------------------------------------------*/
+.visualBox{font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif; background-color: #f1f1f1;}
+.visualBox h2{font-size: 24px; color:#231815; text-align: center; margin:0 0 15px 0; padding-top: 25px; }
+.visualBox p{width:720px; margin: 0 auto; font-size:12px; line-height: 1.6; text-indent: 2em; margin-bottom: 10px;}
+.visualBox .visual_list{width:720px; margin: 0 auto;}
+.visualBox .col{_display:inline; float:left; margin: 0 7px;}
+.visualBox .col img{display: block; margin-bottom: 5px;}
+.visualBox h3{font-size: 17px; color:#231815; text-align: center; padding: 20px 0; }
+
+
+
+
 

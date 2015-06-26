@@ -5,6 +5,19 @@ var ilasik = {
 
   },
   
+  faqSlide: function(){
+    $('.faqItem .qu').on('click',function(e){
+      if($(this).hasClass('cur')){
+        $(this).removeClass('cur');
+        $(this).siblings('.aw').slideUp('fast','easeOutQuad');
+      } else {
+        $(this).addClass('cur');
+        $(this).siblings('.aw').slideDown('fast','easeOutQuad');
+      }
+      e.preventDefault();
+    })
+  },
+  
   // testilasik.html 答题
   testilasik: function(){
     if($('.testilasikBox').length > 0){

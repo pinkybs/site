@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<link href="css/main.css" type="text/css" rel="stylesheet" />
+<link href="css/nivo-slider.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<div class="header">
+    <div class="logo">
+      <a class="mainLogo" href=""><img src="images/main_logo.png"></a>
+      <span class="subLogo"><img src="images/sub_logo.png"></span>
+    </div>
+    <div class="nav">
+     <ul>
+       <li><a class="index" href="index.html">首页</a></li>
+       <li><a href="why.html">为什么要做LASIK</a></li>
+       <li><a href="what.html">什么是LASIK手术</a></li>
+       <li><a href="quality.html">有关视觉质量</a></li>
+       <li><a href="ilasik.html">有关iLASIK</a></li>
+       <li><a href="quiz.html">您是否适合iLASIK</a></li>
+       <li><a href="faq.html">iLASIK常见问答</a></li>
+       <li><a href="aboutamo.html">关于AMO</a></li>
+     </ul>
+    </div>
+	</div>
+
+	<div class="content">
+		<div class="mainContent">
+      <div class="indexBox">
+        <div class="mainSlide">
+          <img src="images/maingif_img1.jpg">
+          <img src="images/maingif_img2.jpg">
+          <img src="images/maingif_img3.jpg">
+          <img src="images/maingif_img4.jpg">
+        </div>
+        <div class="mainList clearFix">
+          <div class="leftBar">
+            <a class="link1" href="superiority.html"><img src="images/section_img1.jpg"><span class="btn">了解更多</span></a>
+          </div>
+          <div class="rightBar">
+            <a class="link2" href="faq.html"><img src="images/section_img2.jpg"><span class="btn">了解更多</span></a>
+            <a class="link3" href="quality.html"><img src="images/section_img3.jpg"><span class="btn">了解更多</span></a>
+            <a class="link4" href="what.html"><img src="images/section_img4.jpg"><span class="btn">了解更多</span></a>
+          </div>
+        </div>
+        <div class="mainLink">
+          <a class="mLink1" href="experts.html"><img src="images/section_link1.jpg"></a><a class="mLink2" href="search.html"><img src="images/section_link2.jpg"></a><a class="mLink3" href="mailto:doctor@ilasik-amo.com"><img src="images/section_link3.jpg"></a>
+        </div>
+      </div>
+		</div>
+	</div>
+
+	<div class="footer">
+   <div class="footerCont">
+     <p>©2014 Abbott Medical Optics Inc.</p>
+     <p>iLASIK商标注册证号码：10 6820355</p>
+     <p>PP2015RF0098</p>
+   </div>
+	</div>
+
+
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/plugin/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/plugin/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.mainSlide').nivoSlider({
+      effect:'boxRainReverse',
+      pauseTime:4000,
+      directionNav:false,
+      controlNav:false
+    });
+    $('.nav a').eq(0).addClass('cur');
+  }); //end ready
+</script>
+</body>
+</html>

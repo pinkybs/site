@@ -18,16 +18,6 @@ var ilasik = {
     })
   },
   
-  // testilasik.html 答题
-  testilasik: function(){
-    if($('.testilasikBox').length > 0){
-      
-	  
-    }else{
-      return;
-    }
-  },
-  
   // index.html 首页maingif
   mainslide: function(){
     if($('.mainSlide').length > 0 ){

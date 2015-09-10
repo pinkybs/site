@@ -1,0 +1,61 @@
+BeiJing,BEIJING,BeiJing AIMASHI eye ilasik central,www.amass-eye.com
+BeiJing,BEIJING,BeiJing AIMEIAO medical science company,www.aimeiao.com
+BeiJing,BEIJING,BeiJing HUADE eye hospital,www.bjpryk.com
+BeiJing,BEIJING,BeiJing HUADE eye hospital company,1213109.czvv.com
+BeiJing,BEIJING,BeiJing HUADU asia hospital,www.kq36.cn/324eb3ib5
+BeiJing,BEIJING,BeiJing JIAHUI international eye central,www.kq36.cn/107207
+BeiJing,BEIJING,BeiJing JIAYUE eyehospital,www.jiayuechina.com
+BeiJing,BEIJING,BeiJing military hospital,www.bjjqzyy.com
+BeiJing,BEIJING,BeiJing MINZHONG eyehospital,www.mzeyes.com
+BeiJing,BEIJING,BeiJing MIN sight eye hospital,www.mingshiguang.cn
+BeiJing,BEIJING,BeiJing RUNSHI eye hospital,www.runshistar.com
+BeiJing,BEIJING,BeiJing TONGREN FUKANG eye hospital,556506.pe168.com
+BeiJing,BEIJING,Beijing TONGREN hospital,www.trhos.com
+BeiJing,BEIJING,Beijing XINLI eye hospital,www.bjxlyk.com
+BeiJing,BEIJING,HAOHAO eye,yiyuan.zgjsyw.com
+BeiJing,BEIJING,Chinese People's Liberation Army 261 hospital,www.gyh261.com
+BeiJing,BEIJING,Chinese People's Liberation Army 306 hospital,www.306.cn
+BeiJing,BEIJING,Chinese People's Liberation Army 309 hospital,www.309yy.com
+ShangHai,SHANGHAI,Chinese People's Liberation Army 85 hospital,www.sh85yy.com
+ShangHai,SHANGHAI,ShangHai AIER eye hospital company,www.aier021.com
+ShangHai,SHANGHAI,ShangHai HUSHEN ENT dept hospital,www.hs5g.com
+ShangHai,SHANGHAI,ShangHai JIAOTONG university affiliated XINHUA hospital,www.xinhuamed.com.cn
+ShangHai,SHANGHAI,ShangHai MINGSHIKANG eye hospital(Chinese People's Liberation Army 455 hospital),www.455hospital.cn
+ShangHai,SHANGHAI,ShangHai PURUI eye hospital,www.pr021.com
+ShangHai,SHANGHAI,ShangHai RENAI hospital eye,www.renai.cn
+ShangHai,SHANGHAI,ShangHai eye diseases prevention central,www.shsyf.com
+ShangHai,SHANGHAI,ShangHai new eye sight hospital,www.shneweye.com
+ShangHai,SHANGHAI,ShangHai CHANGHAI hospital,chhospital.com.cn
+GuangZhou,GUANGZHOU,AMASHI eye hospital,www.amass-eye.com,
+GuangZhou,GUANGZHOU,GUANGDONG people hospital,www.gdghospital.org.cn,
+GuangZhou,GUANGZHOU,GuangZhou AIER eyehospital,www.eye020.com,
+GuangZhou,GUANGZHOU,GuangZhou military GuangZhou hospital,www.gzzyy.com,
+GuangZhou,GUANGZHOU,GuangZhou first people hospital,yy.gzhosp.cn,
+GuangZhou,GUANGZHOU,GuangZhou JILI eye clinic,www.jilieye.com,
+GuangZhou,GUANGZHOU,ZHONGSHAN university eye central,www.gzzoc.com,
+ShenZhen,SHENZHEN,Beijing university ShenZhen hospital,www.pkuszh.com
+ShenZhen,SHENZHEN,ShenZhen BOAI hospital,www.szboai.com.cn
+ShenZhen,SHENZHEN,ShenZhen spring hospital,spring.91.cn
+ShenZhen,SHENZHEN,ShenZhen KEMEI eye hospital,www.kemei.cn
+ShenZhen,SHENZHEN,ShenZhen eye hospital,www.sz-eyes.com
+ShenZhen,SHENZHEN,ShenZhen SHUGUANG eye hospital,yanke.sg91.net
+ShenZhen,SHENZHEN,ShenZhen SHUGUANG hospital,www.sg91.net/
+ShenZhen,SHENZHEN,ShenZhen sun shine hospital,sun.91.cn
+WuHan,WUHAN,WUCHANG AIGE eye hospital,s9mvsm0v.locoso.com
+WuHan,WUHAN,WuHan AIGE eye hospital,www.aige010.com
+WuHan,WUHAN,WuHan AIER eye hospital,www.eye027.com
+WuHan,WUHAN,WuHan RUIPU eye hospital,www.pr027.com
+ChengDu,CHENGDU,ChengDu 363 hospital,www.hospital2.com/hostemp_110822/,,
+ChengDu,CHENGDU,ChengDu AIDE eye hospital,www.028aidi.com,,
+ChengDu,CHENGDU,ChengDu AIER eye hospital,cdeye.ecaihr.com,,
+ChengDu,CHENGDU,ChengDu KANGQIAO eye hospital,www.kqeye.com,,
+ChengDu,CHENGDU,ChengDu LUOJI air force hospital(452),www.chinaeye.com,,
+ChengDu,CHENGDU,ChengDu RUIPU eye hospital,www.p028.com,,
+ChengDu,CHENGDU,ChengDu century eye hospital,www.cdsjyk.com,,
+NanJing,NANJING,NanJing AIER eye hospital,www.eye025.com
+NanJing,NANJING,NanJing DONGNAN eye hospital,www.njsee.com
+NanJing,NANJING,NanJing medicine university second affiliated hospital,www.jsnydefy.com
+HangZhou,HANGZHOU,HangZhou MINGSHIKANG eye hospital,www.msk-lasik.com/
+HangZhou,HANGZHOU,HangZhou teacher training university affiliated hospital(second people hospital),www.hz2y.com
+HangZhou,HANGZHOU,XIAOSHAN laser hospital,www.xsjgyy.com
+HangZhou,HANGZHOU,ZHEJIANG people hospital,www.hospitalstar.com

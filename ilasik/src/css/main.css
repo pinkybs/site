@@ -100,6 +100,9 @@ a:hover {
 .header .logo{position: relative; width:1000px; height: 90px; margin: 0 auto;}
 .header .logo .mainLogo{position: absolute; left:0; top:12px;}
 .header .logo .subLogo{position: absolute; right:0; top:20px;}
+.header .logo .language{position:absolute; right:180px; top:40px;}
+.header .logo .language a{color:#707070; text-decoration:none; margin-left:20px;}
+.header .logo .language a:hover{color:#6baa2f;}
 .header .nav{width:1000px; height: 60px; margin: 0 auto;}
 .header .nav ul li{_display:inline; float: left;}
 .header .nav ul li a{display: block; text-decoration: none; font-weight: bold; padding: 0 20px; height: 60px; line-height: 60px; font-size: 13px; color:#3e3a39; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif;

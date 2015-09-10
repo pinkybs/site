@@ -2,9 +2,63 @@ var _DATA = [{"id":1,"cityKey":"ANQING","cityName":"\u5b89\u5e86","hospital":"\u
 
 var ilasik = {
   test: function(){
-
+	//ilasik.setCookie("lang","cn",2592000);
+	//alert(ilasik.getCookie('lang'));
+	//ilasik.clearCookie("lang");                 
+  },
+  initLang: function(){	  
+	//console.debug(ilasik.getCookie('lang'));
+	$('.logo .language').delegate(".chinese","click",function(){
+		ilasik.setCookie("lang","cn",2592000);
+		//console.debug(window.location.href);
+		$(this).attr('href', window.location.href.replace("/en/","/"));
+	});
+	$('.logo .language').delegate(".english","click",function(e){
+		ilasik.setCookie("lang","en",2592000);
+		if (window.location.href.lastIndexOf('/en/') == -1) {			
+			var idx = window.location.href.lastIndexOf('/');
+			$(this).attr('href', window.location.href.substr(0,idx+1) + 'en' +  window.location.href.substr(idx));
+		}
+		else {
+			$(this).attr('href', window.location.href);
+		}
+	});
+	$('.mainLink .mLink3').attr('href', 'mailto:doctor@ilasik-amo.com');
   },
   
+  //取得cookie
+  getCookie: function(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');    
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];                      
+		while (c.charAt(0)==' ') {          
+			c = c.substring(1,c.length);
+		}
+		if (c.indexOf(nameEQ) == 0) {
+			return decodeURI(c.substring(nameEQ.length,c.length));
+		}
+	}
+	return false;
+  },
+  
+  //清除cookie
+  clearCookie: function(name) {
+	ilasik.setCookie(name, "", -1);
+  },
+
+  //设置cookie
+  setCookie: function(name, value, seconds) {
+	seconds = seconds || 0;
+	var expires = "";
+	if (seconds != 0 ) {
+		var date = new Date();
+		date.setTime(date.getTime()+(seconds*1000));
+		expires = "; expires="+date.toGMTString();
+	}
+	document.cookie = name+"="+encodeURI(value)+expires+"; path=/";
+  },
+
   faqSlide: function(){
     $('.faqItem .qu').on('click',function(e){
       if($(this).hasClass('cur')){
@@ -195,8 +249,8 @@ var ilasik = {
   quiz: function(city, curpage) {
 	for(var i=1;i<=60;i++) {
 		$('#sel1').append('<option>近视'+(i*25)+'度</option>');
-		$('#sel2').append('<option>近视'+(i*25)+'度</option>');
-		$('#sel3').append('<option>近视'+(i*25)+'度</option>');
+		$('#sel2').append('<option>远视'+(i*25)+'度</option>');
+		$('#sel3').append('<option>散光'+(i*25)+'度</option>');
 	}
 	
 	var $testLink =  $('.testilasikBox .testItem .answer a');

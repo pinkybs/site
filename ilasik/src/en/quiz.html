@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Are you a candidate for iLASIK?</title>
+<link href="css/main.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="header">
+    <div class="logo">
+      <a class="mainLogo" href=""><img src="images/main_logo.png"></a>
+      <span class="subLogo"><img src="images/sub_logo.png"></span>
+      <div class="language"><a class="chinese" href="../index.html">中文</a><a class="english" href="index.html">English</a></div>
+    </div>
+    <div class="nav">
+     <ul>
+       <li><a class="index" href="index.html">Home page</a></li>
+       <li><a href="why.html">Why is LASIK necessary?</a></li>
+       <li><a href="what.html">What is LASIK?</a></li>
+       <!--<li><a href="quality.html">On visual quality</a></li>-->
+       <li><a href="ilasik.html">On the iLASIK Procedure</a></li>
+       <li style="width:182px;"><a style="line-height:20px; padding-top:12px; height:48px; padding-left:25px; padding-right:5px;" href="quiz.html">Are you a candidate for <br>the iLASIK Procedure?</a></li>
+       <li><a href="faq.html"> FAQs</a></li>
+       <li><a href="aboutamo.html">On AMO</a></li>
+     </ul>
+    </div>
+	</div>
+
+	<div class="content">
+		<div class="mainContent">
+      <div class="testilasikBox clearFix">
+        <div class="testilasikWrap">
+          <h2><img src="images/testilasik/testilasik_img1.jpg"></h2>
+          <div class="testItem testItem1">
+            <h3 class="question">A.  Do you drive?</h3>
+            <div class="answer">
+              <a data-score="1" data-group="1" href="">Yes</a>
+              <a data-score="2" data-group="1" href="">No</a>
+            </div>
+          </div>
+          <div class="testItem testItem2 grey">
+            <h3 class="question">B.  How long do you have exercises every day? </h3>
+            <div class="answer">
+              <a data-score="1" data-group="2" href="">Never</a>
+              <a data-score="2" data-group="2" href="">0-1 hour</a>
+              <a data-score="3" data-group="2" href="">1-3 hour</a>
+              <a data-score="4" data-group="2" href="">3-8 hour</a>
+              <a data-score="5" data-group="2" href="">>8 hour</a>
+            </div>
+          </div>
+          <div class="testItem testItem3">
+            <h3 class="question">C.  How long do you use a computer?</h3>
+            <div class="answer">
+              <a data-score="1" data-group="3" href="">Never</a>
+              <a data-score="2" data-group="3" href="">0-1 hour</a>
+              <a data-score="3" data-group="3" href="">1-2 hour</a>
+              <a data-score="4" data-group="3" href="">2-4 hour</a>
+              <a data-score="5" data-group="3" href="">>4 hour</a>
+            </div>
+          </div>
+          <div class="testItem testItem3 grey">
+            <h3 class="question">D.   How long do you watch TV, use cell phone or iPad?</h3>
+            <div class="answer">
+              <a data-score="1" data-group="4" href="">Never</a>
+              <a data-score="2" data-group="4" href="">0-1 hour</a>
+              <a data-score="3" data-group="4" href="">1-2 hour</a>
+              <a data-score="4" data-group="4" href="">2-4 hour</a>
+              <a data-score="5" data-group="4" href="">>4 hour</a>
+            </div>
+          </div>
+          <div class="testItem testItem3">
+            <h3 class="question">E.  Do you have any of the following eye refractive errors? </h3>
+            <div class="answer">
+              <a data-score="1" data-group="5" href="">myopia</a>
+              <a data-score="2" data-group="5" href="">hyperopia</a>
+              <a data-score="3" data-group="5" href="">astigmatism</a>
+              <a data-score="4" data-group="5" href="">myopia with astigmatism</a>
+              <a data-score="5" data-group="5" href="">hyperopia with astigmatism</a>
+              <a data-score="6" data-group="5" href="">no refractive power</a>
+            </div>
+          </div>
+          <div class="testItem testItem3 grey" id="divQuestionF" style="display:none;">
+            <h3 class="question">F.  What is your prescription? </h3>
+            <div class="answer clearFix">
+              <div id="divsel1" style="display:none;"><a class="cur">myopia: ** D</a><select id="sel1"></select></div>
+              <div id="divsel2" style="display:none;"><a class="cur">hyperopia: **D</a><select id="sel2"></select></div>
+              <div id="divsel3" style="display:none;"><a class="cur">astigmatism: **D</a><select id="sel3"></select></div>
+            </div>
+			            
+          </div>
+          <a class="submit" href="">Submit!</a>
+        </div>
+        <div class="result1"><img src="images/testilasik/testilasik_result1.jpg"></div>
+        <div class="result2"><img src="images/testilasik/testilasik_result2.jpg"></div> 
+      </div>
+      
+		</div>
+	</div>
+
+	<div class="footer">
+   <div class="footerCont">
+     <p>©2015 Abbott Medical Optics Inc.</p>
+     <p>iLASIK trademark registered number: 10 6820355</p>
+     <p>PP2015RF0098</p>
+   </div>
+	</div>
+
+
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="../js/common-en.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+	ilasik.initLang();  
+    $('.nav a').eq(4).addClass('cur');
+	ilasik.quiz();	
+  }); //end ready
+</script>
+</body>
+</html>

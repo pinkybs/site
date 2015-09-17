@@ -124,28 +124,43 @@
 	</div>
 
 
-<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="./js/sea.js"></script>
 <script type="text/javascript">
-  $(document).ready(function(){
-    ilasik.initLang();
-    //$('.nav a').eq(0).addClass('cur');
-	//alert(window.location.href);
-	var reg = new RegExp("(^|&)" + 'city' + "=([^&]*)(&|$)");
-	var reg2 = new RegExp("(^|&)" + 'page' + "=([^&]*)(&|$)");
-	var r = location.search.substring(1).match(reg);
-	var city = '';
-	var r2 = location.search.substring(1).match(reg2);
-	var page = 1;
-	if (r != null) {
-		city = $.trim(decodeURI(r[2]));
-	}
-	if (r2 != null) {
-		page = $.trim(decodeURI(r2[2]));
-	}
-	//alert(page);
-	ilasik.searchresult(city, page);	
-  }); //end ready
+    // Set configuration
+	seajs.config({
+		base: "/js",
+		charset: 'utf-8',
+		alias: {
+		  "jquery": "jquery.sea"
+		}
+	});
+
+    // 加载多个模块，在加载完成时，执行回调
+	seajs.use('jquery.sea', function($) {
+	  //console.debug($);
+	  $(document).ready(function() {
+		seajs.use('common.sea', function(comm) {
+		  comm.ilasik.initLang();
+		  
+			var reg = new RegExp("(^|&)" + 'city' + "=([^&]*)(&|$)");
+			var reg2 = new RegExp("(^|&)" + 'page' + "=([^&]*)(&|$)");
+			var r = location.search.substring(1).match(reg);
+			var city = '';
+			var r2 = location.search.substring(1).match(reg2);
+			var page = 1;
+			if (r != null) {
+				city = $.trim(decodeURI(r[2]));
+			}
+			if (r2 != null) {
+				page = $.trim(decodeURI(r2[2]));
+			}
+			//alert(page);
+		  comm.ilasik.searchresult(city, page);
+		  //comm.ilasik.test();
+		});		
+	  });
+	});
 </script>
+
 </body>
 </html>
